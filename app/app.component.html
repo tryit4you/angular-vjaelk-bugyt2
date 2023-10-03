@@ -1,0 +1,7 @@
+		<recursive-component [item]="{subtasks:sampleData}"></recursive-component>
+    <table>
+      <tr (click)="expanded(item)" *ngFor="let item of items">
+        <td>{{item.taskID}}</td>
+        <td [style.padding-left]="item.index*20+'px'">{{item.taskName}}{{item.index}}</td>
+      </tr>
+      </table>
